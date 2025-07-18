@@ -13,6 +13,11 @@ limiter = Limiter(key_func=get_remote_address)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
+@app.get("/")
+async def root():
+    return {"message": "Welcome to the ATS Checker API. Use /check-ats endpoint to check ATS compatibility."}
+    
+
 class ATSRequest(BaseModel):
     resume: str
     job_description: str
