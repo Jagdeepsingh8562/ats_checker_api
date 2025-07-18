@@ -18,7 +18,7 @@ class ATSRequest(BaseModel):
     job_description: str
 
 @app.post("/check-ats")
-@limiter.limit("5/minute")
+@limiter.limit("5/day")
 async def check_ats(data: ATSRequest, request: Request):
     try:
         system_prompt = (

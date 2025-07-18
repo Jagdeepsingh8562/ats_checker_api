@@ -9,7 +9,7 @@ This is a simple and production-ready API built using **FastAPI**, powered by th
 - ✅ Accepts resume & job description as text input
 - ✅ Returns ATS score (0–100) and improvement suggestions
 - ✅ Uses OpenAI's `o4-mini-2025-04-16` model
-- ✅ Rate-limited by IP (5 requests/min) using `slowapi`
+- ✅ Rate-limited by IP (5 requests/day) using `slowapi`
 - ✅ Environment variable support via `.env`
 
 ---
