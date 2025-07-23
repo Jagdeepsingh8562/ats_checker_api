@@ -4,3 +4,5 @@ path/
 railway.json
 vercel.json
 .vercel
+node_modules/
+package-lock.json
